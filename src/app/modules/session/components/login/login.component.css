@@ -1,0 +1,22 @@
+button{
+  cursor: pointer;
+  margin-left: 16px;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.column{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.buttons{
+  justify-content: center;
+}
+.fields{
+  justify-content: space-around;
+}
