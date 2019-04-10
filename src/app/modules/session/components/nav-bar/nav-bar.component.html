@@ -1,5 +1,5 @@
 <div>
-  <app-logout *ngIf="isLogged;else notLogged">
+  <app-logout *ngIf="session.isLogged;else notLogged">
   </app-logout>
 
   <ng-template #notLogged>

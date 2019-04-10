@@ -1,4 +1,5 @@
 <div class="main">
   <app-nav-bar></app-nav-bar>
+  <app-index-weather *ngIf="session.isLogged"></app-index-weather>
   <router-outlet></router-outlet>
 </div>

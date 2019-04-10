@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import { SessionModule } from './modules/session/session.module';
+import { WeatherModule } from './modules/weather/weather.module';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -13,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     SessionModule,
+    WeatherModule,
     AppRoutingModule
   ],
   providers: [],
