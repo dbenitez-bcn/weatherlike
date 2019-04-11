@@ -1,0 +1,9 @@
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown{
+  display: flex;
+  flex-flow: row;
+}

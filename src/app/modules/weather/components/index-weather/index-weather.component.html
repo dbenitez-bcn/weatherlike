@@ -1,3 +1,8 @@
-<p>
-  index-weather works!
-</p>
+<div class="main">
+  <div class="dropdown">
+    ciudad: <select class="" name="">
+      <option *ngFor="let city of cities" value="{{city['woeid']}}">{{city['name']}}</option>
+    </select>
+  </div>
+<app-weather-card></app-weather-card>
+</div>
