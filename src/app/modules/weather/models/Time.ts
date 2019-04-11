@@ -6,5 +6,4 @@ export class Time {
      public timeZone: string,
      public weatherDays: Array<WeatherDay>
    ){}
-
 }

@@ -7,6 +7,6 @@ export class WeatherDay {
     public windSpeed: number,
     public humidity: number,
     public visibility: number,
-    public predictability: numeber
+    public predictability: number
   ){}
 }

@@ -1,0 +1,36 @@
+.card-box{
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.headers{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.weather-img{
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+}
+
+.titles{
+  display: flex;
+  flex-direction: column;
+}
+
+span{
+  margin: 0;
+}
+
+.city-name{
+  font-size: 32px;
+  color: black;
+}
+
+.city-zone{
+  font-size: 26px;
+  color: grey;
+}
