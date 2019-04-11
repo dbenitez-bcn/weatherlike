@@ -6,7 +6,6 @@ export class WeatherDay {
     public maxTemp: number,
     public windSpeed: number,
     public humidity: number,
-    public visibility: number,
     public predictability: number
   ){}
 }

@@ -34,3 +34,8 @@ span{
   font-size: 26px;
   color: grey;
 }
+
+.days-box{
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,29 @@
+.day-container{
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+.date{
+  align-self: center;
+  font-weight: bold;
+}
+.data-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.day-img{
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+}
+.temp{
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle-bold{
+  font-weight: bold;
+  margin-right: 4px;
+}
