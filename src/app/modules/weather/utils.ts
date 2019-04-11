@@ -1,9 +1,13 @@
 export const URLS = {
   heroku: 'https://cors-anywhere.herokuapp.com/',
-  metaweatherapi: 'https://www.metaweather.com/api/'
-}
+  metaweatherapi: 'https://www.metaweather.com/'
+};
 
-export const weatherStates = {
+export const ACTIONS = {
+  location: 'api/location/'
+};
+
+export const WEATHER_STATES = {
   sn: 'https://www.metaweather.com/static/img/weather/sn.svg',
   sl: 'https://www.metaweather.com/static/img/weather/sl.svg',
   h: 'https://www.metaweather.com/static/img/weather/h.svg',
@@ -14,4 +18,4 @@ export const weatherStates = {
   hc: 'https://www.metaweather.com/static/img/weather/hc.svg',
   lc: 'https://www.metaweather.com/static/img/weather/lc.svg',
   c: 'https://www.metaweather.com/static/img/weather/c.svg'
-}
+};
