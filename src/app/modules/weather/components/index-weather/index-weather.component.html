@@ -1,8 +1,8 @@
 <div class="main">
   <div class="dropdown">
-    ciudad: <select class="" name="">
+    ciudad: <select class="" [(ngModel)]="woeidSelected" (change)="changeTimeSelected()">
       <option *ngFor="let city of cities" value="{{city['woeid']}}">{{city['name']}}</option>
     </select>
   </div>
-<app-weather-card></app-weather-card>
+<app-weather-card *ngIf="timeSelected" [time]="timeSelected"></app-weather-card>
 </div>

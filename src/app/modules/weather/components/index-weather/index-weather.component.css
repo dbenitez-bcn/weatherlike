@@ -7,3 +7,8 @@
   display: flex;
   flex-flow: row;
 }
+
+.main-cities{
+  display: flex;
+  flex-direction: row;
+}

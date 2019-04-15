@@ -1,24 +1,24 @@
 <div class="day-container">
   <span class="date">
-    01-01-2019
+    {{day.applicable_date}}
   </span>
   <div class="data-box">
-    <img src="https://www.metaweather.com/static/img/weather/sn.svg" alt="" class="day-img"/>
+    <img src="{{stateImage}}" alt="" class="day-img"/>
     <div class="temp">
-      <span class="max-temp">18º</span>
-      <span class="min-temp">8º</span>
+      <span class="max-temp">{{day.max_temp|number}}º</span>
+      <span class="min-temp">{{day.min_temp|number}}º</span>
     </div>
   </div>
   <div class="subtitle-box">
     <span class="subtitle-bold">Precipitaciones:</span>
-    <span class="subtitle-data">15%</span>
+    <span class="subtitle-data">{{day.predictability}}%</span>
   </div>
   <div class="subtitle-box">
     <span class="subtitle-bold">Humedad:</span>
-    <span class="subtitle-data">73%</span>
+    <span class="subtitle-data">{{day.humidity}}%</span>
   </div>
   <div class="subtitle-box">
     <span class="subtitle-bold">Viento:</span>
-    <span class="subtitle-data">6 km/h</span>
+    <span class="subtitle-data">{{day.wind_speed |number}} km/h</span>
   </div>
 </div>

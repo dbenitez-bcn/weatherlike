@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { URLS, ACTIONS, WEATHER_STATES } from '../utils';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Time } from '../models/Time';
 
 
@@ -10,8 +10,10 @@ import { Time } from '../models/Time';
 export class WeatherService {
 
   constructor(
-    private hhtpClient: HttpClientModule
+    private httpClient: HttpClient
   ) {}
 
-  // async get
+  public getTimeByWoeid(woeid: number){
+    return this.httpClient.get<Time[]>(URLS.heroku+URLS.metaweatherapi+ACTIONS.location+woeid);
+  }
 }
