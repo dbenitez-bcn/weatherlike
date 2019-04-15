@@ -12,7 +12,10 @@ export class IndexWeatherComponent implements OnInit {
 
   public timeSelected: any;
   public woeidSelected: number;
-  constructor(private weatherService: WeatherService) { }
+  public citiesWoeidArr: Array<number>;
+  constructor(private weatherService: WeatherService) {
+    this.citiesWoeidArr = [753692, 44418, 766273]
+  }
 
   ngOnInit() {
   }
@@ -20,7 +23,6 @@ export class IndexWeatherComponent implements OnInit {
   changeTimeSelected(){
        this.weatherService.getTimeByWoeid(this.woeidSelected).subscribe((res) => {
         this.timeSelected = res;
-        console.log(res);
       });
   }
 

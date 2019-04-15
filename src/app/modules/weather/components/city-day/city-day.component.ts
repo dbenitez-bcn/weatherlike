@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { WeatherService } from '../../services/weather.service';
 
 @Component({
   selector: 'app-city-day',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./city-day.component.css']
 })
 export class CityDayComponent implements OnInit {
+  @Input() woeid: number;
+  private day: any;
 
-  constructor() { }
+  constructor(private weatherService: WeatherService) { }
 
   ngOnInit() {
+    this.weatherService.getTimeByWoeid(this.woeid).subscribe((res) => {
+     this.day = res;
+   });
   }
 
 }

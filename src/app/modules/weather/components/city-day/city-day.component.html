@@ -1,3 +1,4 @@
-<p>
-  city-day works!
-</p>
+<div class="city-box" *ngIf="day">
+  <span class="city-name">{{day.title}}</span>
+  <app-weather-day [day]="day.consolidated_weather[0]"></app-weather-day>
+</div>

@@ -5,4 +5,7 @@
     </select>
   </div>
 <app-weather-card *ngIf="timeSelected" [time]="timeSelected"></app-weather-card>
+<div class="main-cities">
+  <app-city-day *ngFor="let woeid of citiesWoeidArr" [woeid]="woeid"></app-city-day>
+</div>
 </div>
