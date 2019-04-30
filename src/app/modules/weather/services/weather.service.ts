@@ -16,4 +16,8 @@ export class WeatherService {
   public getTimeByWoeid(woeid: number){
     return this.httpClient.get<Time[]>(URLS.heroku+URLS.metaweatherapi+ACTIONS.location+woeid);
   }
+
+  public getTimeByDate(woeid: number, year: any, month: any, day: any){
+    return this.httpClient.get<Time[]>(URLS.heroku+URLS.metaweatherapi+ACTIONS.location+woeid+"/"+year+"/"+month+"/"+day);
+  }
 }

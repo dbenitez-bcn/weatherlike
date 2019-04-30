@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class WeatherCardComponent implements OnInit {
   @Input() time: any;
+  @Input() dateSelected: any;
 
 
   constructor() { }

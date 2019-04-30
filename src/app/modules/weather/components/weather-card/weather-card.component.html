@@ -6,7 +6,11 @@
     </div>
   </div>
   <div class="days-box">
+    <div class="daySelected" *ngIf="dateSelected">
+      <h4>Dia seleccionado</h4>
+      <app-weather-day [day]="dateSelected"></app-weather-day>
+    </div>
     <app-weather-day *ngFor="let day of time.consolidated_weather" [day]="day"></app-weather-day>
   </div>
 </div>
-<hr/>
+<hr />

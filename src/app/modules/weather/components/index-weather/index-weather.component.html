@@ -1,10 +1,12 @@
 <div class="main">
   <div class="dropdown">
-    ciudad: <select class="" [(ngModel)]="woeidSelected" (change)="changeTimeSelected()">
+    Ciudad: <select class="picker" [(ngModel)]="woeidSelected" (change)="changeTimeSelected()">
       <option *ngFor="let city of cities" value="{{city['woeid']}}">{{city['name']}}</option>
     </select>
+    Fecha:
+    <input class="picker" type="date"  [(ngModel)]="dateSelected" (change)="changeDateSelected()">
   </div>
-<app-weather-card *ngIf="timeSelected" [time]="timeSelected"></app-weather-card>
+<app-weather-card *ngIf="timeSelected" [time]="timeSelected" [dateSelected]="daySelectedFromServer"></app-weather-card>
 <div class="main-cities">
   <app-city-day *ngFor="let woeid of citiesWoeidArr" [woeid]="woeid"></app-city-day>
 </div>

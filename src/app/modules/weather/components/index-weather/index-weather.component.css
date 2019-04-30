@@ -5,11 +5,18 @@
 
 .dropdown{
   display: flex;
-  flex-flow: row;
+  flex-direction: row;
+  align-items: center;
+
 }
 
 .main-cities{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.picker{
+  margin-left: 4px;
+  margin-right: 16px;
 }
