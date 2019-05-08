@@ -16,7 +16,7 @@ export class IndexWeatherComponent implements OnInit {
   public woeidSelected: number;
   public citiesWoeidArr: Array<number>;
   constructor(private weatherService: WeatherService) {
-    this.citiesWoeidArr = [753692, 44418, 766273]
+    this.citiesWoeidArr = [753692, 44418, 766273];
   }
 
   ngOnInit() {
